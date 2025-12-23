@@ -1,0 +1,12 @@
+# macOS system files
+.DS_Store
+.localized
+
+# VS Code workspace settings
+.vscode/
+
+# Node dependencies
+node_modules/
+
+# CSS map files from SCSS compilation
+*.css.map
