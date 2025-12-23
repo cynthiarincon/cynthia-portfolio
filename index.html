@@ -12,7 +12,6 @@
 <body>
     <nav id="desktop-nav">
         <div class="logo">Cynthia Rincon</div>
-
         <div>
             <ul class="nav-links">
                 <li><a href="about">About</li>
@@ -21,6 +20,25 @@
                 <li><a href="contact">Contact</li>
             </ul>
         </div>
+    </nav>
+
+    <nav id="hamburger-nav">
+        <div class="logo">Cynthia Rincon</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="about" onclick="toggleMenu()">About</li>
+                <li><a href="experience" onclick="toggleMenu()">Experience</li>
+                <li><a href="projects" onclick="toggleMenu()">Projects</li>
+                <li><a href="contact" onclick="toggleMenu()">Contact</li>
+            </div>
+        </div>
+
+
     </nav>
     <script src="javascript/script.js"></script>
 </body>
