@@ -6,7 +6,6 @@ $light-grey: rgb(181, 181, 181);
 //possible accent colors I like
 $navy: #0A2540;
 $teal: #2EC4B6;
-$blue-green: #0FB9B1;
 
 *{
     margin: 0;
@@ -37,6 +36,7 @@ nav {
     justify-content: space-around;
     align-items: center;
     height: 17vh;
+    background-color: $teal;
 };
 
 .nav-links{
@@ -143,10 +143,6 @@ section{
     margin:0 10rem;
     box-sizing: border-box;
     min-height: fit-content;
-};
-
-.section-container{
-    display: flex;
 };
 
 /*PROFILE SECTION*/
@@ -392,12 +388,164 @@ section{
     height: 2.5rem;
 };
 
-//MEDIA QUERY
+/* FOOTER SECTION */
+footer{
+    height: 26vh;
+    margin: 0;
+};
+
+footer p{
+    text-align: center;
+}
+
+/* ABOUT ME SLIDESHOW */
+.slideshow {
+  display: block !important;  // Force override flex
+  position: relative;
+  width: 400px !important;
+  height: 400px !important;
+  margin: 0 auto;
+  overflow: hidden;
+  border-radius: 2rem; 
+}
+
+.slideshow img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;  // This keeps images from distorting
+  object-position: center;  // Centers the image
+  opacity: 0;
+  animation: fade 10s infinite;
+  border-radius: 2rem;
+}
+
+.slideshow img:nth-child(1) { animation-delay: 0s; }
+.slideshow img:nth-child(2) { animation-delay: 2.5s; }
+.slideshow img:nth-child(3) { animation-delay: 5s; }
+.slideshow img:nth-child(4) { animation-delay: 7.5s; }
+
+@keyframes fade {
+  0% { opacity: 0; }
+  5% { opacity: 1; }
+  25% { opacity: 1; }
+  30% { opacity: 0; }
+  100% { opacity: 0; }
+}
+
+//MEDIA QUERY - TABLET
+@media screen and (max-width: 1400px){
+    #profile{
+        height: 82vh;
+        margin-bottom: 6rem;
+    }
+
+    .about-containers{
+        flex-wrap: wrap;
+    }
+}
+
+//MEDIA QUERY - SMALL TABLET/LARGE PHONE
 @media screen and (max-width: 1200px){
     #desktop-nav{
         display: none;
     }
+
     #hamburger-nav{
         display: flex;
-    };
+    }
+
+    #experience, 
+    .experience-details-container{
+        margin-top: 2rem;
+    }
+
+    #profile, .section-container{
+        display: block;
+    }
+    .arrow{
+        display: none;
+    }
+    section, 
+    .section-container{
+        height: fit-content;
+    }
+    section{
+        margin: 0 5%;
+    }
+    .section__pic-container{
+        width: 275px;
+        height: 275px;
+        margin: 0 auto 2rem;
+    }
+    .about-containers{
+        margin-top: 0;
+    }
+    .slideshow {
+        width: 275px;
+        height: 275px;
+    }
+}
+
+
+//MEDIA QUERY - MOBILE
+@media screen and (max-width: 600px){
+    #contact, footer{
+        height: 40vh;
+    }
+    #profile{
+        height: 83vh;
+        margin-bottom: 0;
+    }
+    article{
+        font-size: 1rem;
+    }
+    footer nav{
+        height: fit-content;
+        margin-bottom: 2rem;
+    }
+    .about-containers,
+    .contact-info-upper-container,
+    .btn-container{
+        flex-wrap: wrap;
+    }
+    .contact-info-container{
+        margin: 0;
+    }
+    .contact-info-container p,
+    .nav-links li a{
+        font-size: 1rem;
+    }
+    .experience-sub-title{
+        font-size: 1.25rem;
+    }
+    .logo{
+        font-size: 1.5rem;
+    }
+    .nav-links{
+        flex-direction: column;
+        gap: 0.5rem;
+        text-align: center;
+    }
+    .section__pic-container{
+        width: auto;
+        height: 46vw;
+        justify-content: center;
+    }
+    .section__text__p2{
+        font-size: 1.25rem;
+    }
+    .title{
+        font-size: 2rem;
+    }
+    .text-container{
+        text-align: justify;
+    }
+    .slideshow {
+        width: 100%;
+        height: 46vw;
+        max-width: 400px;
+    }
 };
