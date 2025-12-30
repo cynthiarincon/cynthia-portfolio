@@ -44,7 +44,6 @@ nav {
 a {
   color: black;
   text-decoration: none;
-  text-decoration-color: white;
 }
 a:hover {
   color: rgb(111, 111, 111);
@@ -119,7 +118,7 @@ a:hover {
   list-style: none;
 }
 .menu-links.open {
-  max-height: 300px;
+  max-height: 400px;
 }
 
 /* SECTIONS */
@@ -303,6 +302,14 @@ section {
 /* PROJECTS */
 #projects {
   position: relative;
+}
+#projects .about-containers {
+  justify-content: center;
+}
+#projects .details-container {
+  flex: 0 1 350px;
+  min-width: 300px;
+  max-width: 400px;
 }
 
 .color-container {

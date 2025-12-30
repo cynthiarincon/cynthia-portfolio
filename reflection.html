@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reflection - Cynthia Rincon</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+</head>
+<body>
+    <!-- Desktop Navigation -->
+    <nav id="desktop-nav">
+        <div class="logo">Cynthia Rincon</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#experience">Experience</a></li>
+                <li><a href="index.html#projects">Projects</a></li>
+                <li><a href="natours.html">Natours</a></li>
+                <li><a href="resume.html">Resume</a></li>
+                <li><a href="reflection.html">Reflection</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hamburger Navigation -->
+    <nav id="hamburger-nav">
+        <div class="logo">Cynthia Rincon</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="index.html#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="index.html#experience" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="index.html#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="natours.html" onclick="toggleMenu()">Natours</a></li>
+                <li><a href="resume.html" onclick="toggleMenu()">Resume</a></li>
+                <li><a href="reflection.html" onclick="toggleMenu()">Reflection</a></li>
+                <li><a href="contact.html" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Reflection Content -->
+    <section id="reflection">
+        <p class="section__text__p1">My Journey</p>
+        <h1 class="title">Apprenticeship Reflection</h1>
+        
+        <div class="experience-details-container">
+            <div class="about-containers">
+                
+                <!-- Professional Development -->
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Professional Development</h2>
+                    <p>Over the past three months of my apprenticeship, I've grown tremendously in my professional communication and project management skills. I've learned to present my work in mock interviews using the STAR method, collaborate with teams during the Code for Justice Hackathon, and manage multiple projects simultaneously while meeting strict evaluation deadlines. I've developed the discipline to debug independently and the courage to ask for help when needed. Moving forward, I want to continue strengthening my technical presentation skills and building confidence in technical interviews.</p>
+                </div>
+
+                <!-- Technical Growth -->
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Technical</h2>
+                    <p>Since starting the apprenticeship, I've built a strong foundation in HTML, CSS, and JavaScript. I've completed multiple projects including DinoDigits (calculator with responsive design), Skinthia (e-commerce site with JSON data and form validation), and CLASH (rock-paper-scissors game). I've learned SASS for better styling organization, Git/GitHub for version control, and deployment on platforms like Vercel and AWS. Currently, I'm diving deeper into JavaScript fundamentals including callbacks, promises, async/await, and Node.js. I'm most proud of building this portfolio from scratch and debugging complex layout issues independently.</p>
+                </div>
+
+                <!-- Personal Growth -->
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Personal</h2>
+                    <p>My apprenticeship journey has been one of consistent growth and self-discovery. While I still face moments of self-doubt especially when debugging errors or preparing for presentations, I've learned to embrace challenges as learning opportunities rather than obstacles. Transitioning from healthcare to tech has taught me that my problem-solving skills and attention to detail transfer beautifully to coding. I've learned to celebrate small wins, like fixing a tricky SASS compilation error or successfully deploying my first project. I'm becoming more confident in my abilities while staying humble and eager to learn. The biggest lesson? Progress isn't always linear, and that's okay.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div id="footer-socials">
+            <img src="./assets/linkedin.png" alt="LinkedIn" class="icon" onclick="location.href='https://www.linkedin.com/in/cynthia-r-0299a2191'">
+            <img src="./assets/github.png" alt="GitHub" class="icon" onclick="location.href='https://github.com/cynthiarincon'">
+        </div>
+        <p>Copyright &copy; 2026 Cynthia Rincon. All Rights Reserved.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

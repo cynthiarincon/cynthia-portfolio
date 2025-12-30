@@ -54,7 +54,6 @@ nav {
 a{
     color:black;
     text-decoration: none;
-    text-decoration-color: white;
    
     &:hover{
         color: $medium-grey;
@@ -137,7 +136,7 @@ a{
     }
 
     &.open {
-        max-height: 300px;
+        max-height: 400px; //hamburger menu height
     }
 };
 
@@ -324,6 +323,16 @@ section{
 /* PROJECTS */
 #projects{
     position: relative;
+
+    .about-containers {
+        justify-content: center;  // Center the cards
+    }
+    
+    .details-container {
+        flex: 0 1 350px;  // Fixed width, can shrink if needed
+        min-width: 300px;  // Don't go smaller than this
+        max-width: 400px;  // Don't go bigger than this
+    }
 };
 
 .color-container{
