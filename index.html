@@ -17,8 +17,8 @@
                 <li><a href="#about">About</a></li>
                 <li><a href="#experience">Experience</a></li>
                 <li><a href="#projects">Projects</a></li>
-                <li><a href="natours">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="/natours.html">Natours</a></li>
+                <li><a href="/contact.html">Contact</a></li>
             </ul>
         </div>
     </nav>
@@ -36,7 +36,7 @@
                 <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
                 <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
                 <li><a href="natours.html" onclick="toggleMenu()">Natours</a></li>
-                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+                <li><a href="/contact.html" onclick="toggleMenu()">Contact</a></li>
             </div>
         </div>
 
@@ -54,7 +54,7 @@
             <div class="btn-container">
                 <button class="btn btn-color-2" onclick="window.open('assets/cynthia-resume.pdf')">Download CV</button> 
 
-                <button class="btn btn-color-1" onclick="location.href='./#contact'">Contact Info</button> 
+                <button class="btn btn-color-1" onclick="location.href='contact.html'">Contact Info</button> 
             </div>
             <div id="socials-container">
                 <img src="./assets/linkedin.png" alt="My LinkedIn profile" class="icon" onclick="location.href='https://www.linkedin.com/in/cynthia-r-0299a2191'">
@@ -93,7 +93,6 @@
                 </div>
             </div>
         </div>
-        <img src="/assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#experience'">
     </section>
 
     <section id="experience">
@@ -157,7 +156,6 @@
                         </article>
             </div>
         </div>
-        <img src="/assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'">
     </section>
 
     <section id="projects">
@@ -169,7 +167,7 @@
                 <div class="article-container">
                     <img src="/assets/project-placeholder.png" alt="Project 1" class="project-img">
                 </div>
-                <h2 class="experience-sub-title project-title">Project One</h2>
+                <h2 class="experience-sub-title project-title">eCommerce</h2>
                 <div class="btn-container">
                     <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/cynthiarincon'">GitHub</button>
 
@@ -182,7 +180,7 @@
                 <div class="article-container">
                     <img src="/assets/project-placeholder.png" alt="Project 1" class="project-img">
                 </div>
-                <h2 class="experience-sub-title project-title">Project Two</h2>
+                <h2 class="experience-sub-title project-title">Calculator</h2>
                 <div class="btn-container">
                     <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/cynthiarincon'">GitHub</button>
 
@@ -195,7 +193,7 @@
                 <div class="article-container">
                     <img src="/assets/project-placeholder.png" alt="Project 1" class="project-img">
                 </div>
-                <h2 class="experience-sub-title project-title">Project Three</h2>
+                <h2 class="experience-sub-title project-title">Natours</h2>
                 <div class="btn-container">
                     <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/cynthiarincon'">GitHub</button>
 
@@ -205,7 +203,6 @@
             </div>
             </div>
         </div>
-        <img src="/assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'">
     </section>
 
     <section id="contact">
@@ -222,21 +219,59 @@
                 <p><a href="https://www.linkedin.com/in/cynthia-r-0299a2191">LinkedIn</a></p>
             </div>
         </div>
+
+        <div class="contact-form">
+    <h2>Send me a message!</h2>
+    
+    <!-- Success message (hidden at first) -->
+    <div id="success-message" class="success-message" style="display: none;">
+        <p>✓ Thanks for reaching out! I'll get back to you as soon as I can.</p>
+    </div>
+    
+    <form id="contact-form">
+        <div class="name-group">
+            <input 
+                type="text" 
+                id="first-name"
+                placeholder="First Name" 
+                class="contact-input contact-input-half" 
+                required>
+            <input 
+                type="text" 
+                id="last-name"
+                placeholder="Last Name" 
+                class="contact-input contact-input-half" 
+                required>
+        </div>
+        
+        <input 
+            type="email"
+            id="email"
+            placeholder="Your Email" 
+            class="contact-input" 
+            required>
+        
+        <textarea 
+            id="message"
+            placeholder="Your Message" 
+            class="contact-textarea" 
+            rows="5" 
+            required></textarea>
+        
+        <button type="submit" class="btn btn-color-1">Send Message</button>
+    </form>
+</div>
+          
+</div>
     </section>
 
     <footer>
-        <nav>
-            <div class="nav-links-container">
-                <ul class="nav-links">
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#experience">Experience</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>                
-            </div>
-        </nav>
-        <p>Copyright &copy; 2026 Cynthia Rincon. All Rights Reserved.</p>
-    </footer>
+    <div id="footer-socials">
+        <img src="./assets/linkedin.png" alt="LinkedIn" class="icon" onclick="location.href='https://www.linkedin.com/in/cynthia-r-0299a2191'">
+        <img src="./assets/github.png" alt="GitHub" class="icon" onclick="location.href='https://github.com/cynthiarincon'">
+    </div>
+    <p>Copyright &copy; 2026 Cynthia Rincon. All Rights Reserved.</p>
+</footer>
 
     <script src="js/script.js"></script>
 </body>
