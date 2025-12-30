@@ -534,6 +534,40 @@ footer {
     }
 }
 
+/* RESUME PAGE */
+#resume {
+    padding-top: 4vh;
+    padding-bottom: 4vh;  
+    min-height: fit-content;  
+    margin: 0 10rem;
+    box-sizing: border-box;
+}
+
+.resume-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 2rem 0 4rem 0; 
+}
+
+.resume-download-btn {
+    margin-bottom: 2rem;
+}
+
+.pdf-container {
+    width: 100%;
+    border: 1px solid $light-grey;
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 3rem;  
+    
+    iframe {
+        display: block;
+        border: none;
+        height: 1000px;
+    }
+}
+
 //MEDIA QUERY - SMALL TABLET/LARGE PHONE
 @media screen and (max-width: 1200px){
     #desktop-nav{
@@ -571,8 +605,14 @@ footer {
         width: 275px;
         height: 275px;
     }
+    #resume {
+        margin: 0 5%;
+    }
+    
+    .pdf-container iframe {
+        height: 800px;
+    }
 }
-
 
 //MEDIA QUERY - MOBILE
 @media screen and (max-width: 600px){
@@ -639,5 +679,8 @@ footer {
     .contact-form {
         padding: 1.5rem;
         margin: 1rem;
+    }
+    .pdf-container iframe {
+        height: 600px;
     }
 };
