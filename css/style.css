@@ -266,6 +266,10 @@ section {
   position: relative;
 }
 
+.text-container {
+  margin-bottom: 2.5rem;
+}
+
 .experience-sub-title {
   color: rgb(85, 85, 85);
   font-weight: 6600;

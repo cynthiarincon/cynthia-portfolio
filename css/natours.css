@@ -1,0 +1,149 @@
+/* Natours Page Styles */
+
+.natours-container {
+    flex-direction: column;
+    gap: 3rem;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.natours-intro p,
+.natours-learned p {
+    text-align: left;
+    line-height: 1.8;
+    margin-bottom: 1rem;
+}
+
+.natours-tech {
+    margin-top: 1.5rem;
+    color: rgb(85, 85, 85);
+}
+
+.natours-skills {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+@media screen and (max-width: 768px) {
+    .natours-skills {
+        grid-template-columns: 1fr;
+    }
+}
+
+.skill-card {
+    background: rgb(250, 250, 250);
+    padding: 1.5rem;
+    border-radius: 1rem;
+    border: 1px solid rgb(163, 163, 163);
+    text-align: left;
+}
+
+.skill-card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    color: rgb(53, 53, 53);
+}
+
+.skill-card p {
+    font-size: 0.95rem;
+    margin-bottom: 0.75rem;
+    line-height: 1.6;
+}
+
+.code-example {
+    display: inline-block;
+    background: rgb(53, 53, 53);
+    color: rgb(46, 196, 182);
+    padding: 0.3rem 0.6rem;
+    border-radius: 0.3rem;
+    font-family: 'Courier New', monospace;
+    font-size: 0.85rem;
+}
+
+/* Natours Button Demo */
+.demo-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem 2rem;
+    background: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8));
+    border-radius: 1rem;
+    margin-top: 1.5rem;
+}
+
+.natours-btn:link,
+.natours-btn:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 1.5rem 4rem;
+    display: inline-block;
+    border-radius: 10rem;
+    transition: all 0.2s;
+    position: relative;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.natours-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+}
+
+.natours-btn:active {
+    transform: translateY(-1px);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+}
+
+.natours-btn-white {
+    background-color: #fff;
+    color: #777;
+}
+
+.natours-btn::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 10rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all 0.4s;
+}
+
+.natours-btn-white::after {
+    background-color: #fff;
+}
+
+.natours-btn:hover::after {
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0;
+}
+
+.natours-btn-animated {
+    animation: moveInBottom 0.5s ease-out 0.75s;
+    animation-fill-mode: backwards;
+}
+
+@keyframes moveInBottom {
+    0% {
+        opacity: 0;
+        transform: translateY(3rem);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+.natours-demo p {
+    text-align: left;
+    margin-bottom: 1rem;
+}
+
+.natours-links {
+    text-align: center;
+}
